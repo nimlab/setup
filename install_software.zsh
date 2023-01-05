@@ -175,8 +175,8 @@ if [ -d "/usr/local/Caskroom/mambaforge/base/envs/nimlab_py310" ]; then
 	echo "7a) Found nimlab conda env"
 else
 	echo "7a) Building NIMLAB conda environment"
-	mamba create -y -n nimlab_py310 python=3.10
-	conda activate nimlab_py310
+	mamba create -y -n nimlab python=3.9
+	conda activate nimlab
 	mamba install -y fslpy \
 	h5py \
 	hdf5 \
@@ -206,7 +206,7 @@ pushd ~/repos/nimlab
 	python -m pip install software_env/python_modules/nimlab
 	python -m pip install software_env/python_modules/meta_editor
 popd
-python -m ipykernel install --user --name nimlab_py310 --display-name "Python3.10 (nimlab)"
+python -m ipykernel install --user --name nimlab --display-name "Python3.9 (nimlab)"
 if [[ ! -d ~/setup ]]; then
 	mkdir -p ~/setup
 fi
