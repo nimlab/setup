@@ -146,7 +146,7 @@ else
 	fi
 	echo "5b) Installing FSL (Intel arch)"
 	wget https://fsl.fmrib.ox.ac.uk/fsldownloads/fslinstaller.py
-	arch --x86_64 python2 fslinstaller.py -q -d /usr/local/fsl
+	arch --x86_64 python2 fslinstaller.py -d /usr/local/fsl
 	rm fslinstaller.py
 	echo 'FSLDIR=/usr/local/fsl' >> ~/.zshenv
 	echo '. ${FSLDIR}/etc/fslconf/fsl.sh' >> ~/.zshenv
