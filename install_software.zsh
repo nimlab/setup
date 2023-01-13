@@ -212,9 +212,6 @@ if [[ ! -d ~/setup ]]; then
 fi
 cp -f ~/repos/nimlab/software_env/native_install/mac_config.yaml ~/setup/nimlab_config.yaml
 
-
-echo 'source ~/.zshenv' >> ~/.zshrc
-
 echo ""
 echo "	All done!"
 echo ""
