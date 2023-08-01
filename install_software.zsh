@@ -171,7 +171,7 @@ fi
 
 
 # Install NIMLAB conda environment if needed
-if [ -d "/usr/local/Caskroom/mambaforge/base/envs/nimlab_py310" ]; then
+if [ -d "/usr/local/Caskroom/mambaforge/base/envs/nimlab" ]; then
 	echo "7a) Found nimlab conda env"
 else
 	echo "7a) Building NIMLAB conda environment"
