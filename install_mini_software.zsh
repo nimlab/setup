@@ -177,7 +177,8 @@ else
 	scipy \
 	seaborn \
 	sshpass \
-	statsmodels
+	statsmodels \
+	tqdm
 	
 fi
 
